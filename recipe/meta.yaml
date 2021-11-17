@@ -10,6 +10,8 @@ package:
 source:
   url: https://gitlab.com/elsi_project/elsi_interface/-/archive/v{{ version }}/elsi_interface-v{{ version }}.tar.gz
   sha256: 8ed338328afee15650fd6e1f4c0923dcac8c48e974cb7e0c1dd6f71bffae14d1
+  patches:
+    - version.patch
 
 build:
   number: {{ build }}
