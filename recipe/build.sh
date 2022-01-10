@@ -9,8 +9,8 @@ INC_PATHS=(
   $(pkg-config libOMM MatrixSwitch --cflags-only-I | sed s+-I++g)
 )
 LIB_PATHS=(
-  $(pkg-config elpa_openmp --libs-only-L)
-  $(pkg-config libOMM MatrixSwitch --libs-only-L)
+  $(pkg-config elpa_openmp --libs-only-L | sed s+-L++g)
+  $(pkg-config libOMM MatrixSwitch --libs-only-L | sed s+-L++g)
 )
 LIBS=(
   $(pkg-config elpa_openmp --libs-only-l)

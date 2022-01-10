@@ -194,4 +194,5 @@ Feedstock Maintainers
 =====================
 
 * [@awvwgk](https://github.com/awvwgk/)
+* [@volkerblum](https://github.com/volkerblum/)
 
