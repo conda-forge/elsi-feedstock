@@ -16,6 +16,7 @@ LIBS=(
   $(pkg-config elpa_openmp --libs-only-l)
   "-lNTPoly"
   $(pkg-config libOMM MatrixSwitch --libs-only-l)
+  "-lpexsi"
   "-lscalapack"
   "-llapack"
   "-lblas"
@@ -25,9 +26,12 @@ cmake_options=(
   ${CMAKE_ARGS}
   "-DCMAKE_Fortran_COMPILER=$FC"
   "-DCMAKE_C_COMPILER=$CC"
+  "-DCMAKE_CXX_COMPILER=$CXX"
   "-DUSE_EXTERNAL_ELPA=ON"
   "-DUSE_EXTERNAL_NTPOLY=ON"
   "-DUSE_EXTERNAL_OMM=ON"
+  "-DENABLE_PEXSI=ON"
+  "-DUSE_EXTERNAL_PEXSI=ON"
   "-DBUILD_SHARED_LIBS=ON"
   "-DLIBS=${LIBS[*]// /;}"
   "-DLIB_PATHS=${LIB_PATHS[*]// /;}"
