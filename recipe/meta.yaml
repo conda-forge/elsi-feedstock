@@ -1,6 +1,6 @@
 {% set name = "elsi" %}
 {% set version = "2.8.2" %}
-{% set build = 1 %}
+{% set build = 2 %}
 {% set mpi = mpi or "mpich" %}
 
 package:

@@ -5,7 +5,7 @@ set -ex
 export CC="$PREFIX/bin/mpicc" FC="$PREFIX/bin/mpifort" CXX="$PREFIX/bin/mpicxx"
 
 INC_PATHS=(
-  $(pkg-config elpa_openmp --cflags-only-I | sed s+-I++g)
+  $(pkg-config elpa_openmp --cflags-only-I | sed s+-I++g | sed 's+-2021\.11\.001++g')
   $(pkg-config libOMM MatrixSwitch --cflags-only-I | sed s+-I++g)
 )
 LIB_PATHS=(
