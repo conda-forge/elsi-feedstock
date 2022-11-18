@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c3bc89a2..d5e1db79 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,7 +2,7 @@
+ CMAKE_MINIMUM_REQUIRED(VERSION 3.0 FATAL_ERROR)
+ 
+ ### Project ###
+-PROJECT(elsi VERSION 2.9.0 LANGUAGES NONE)
++PROJECT(elsi VERSION 2.9.1 LANGUAGES NONE)
+ SET(elsi_URL "http://elsi-interchange.org")
+ SET(elsi_EMAIL "elsi-team@duke.edu")
+ SET(elsi_LICENSE "BSD 3")
