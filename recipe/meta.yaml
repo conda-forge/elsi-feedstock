@@ -35,7 +35,7 @@ requirements:
     - libomm * {{ mpi_prefix }}_*
     - matrixswitch * {{ mpi_prefix }}_*
     - elpa * {{ mpi_prefix }}_*
-    - ntpoly * {{ mpi_prefix }}_*
+    - ntpoly 2.7.1 {{ mpi_prefix }}_*
     - scalapack
     - libblas
     - liblapack
