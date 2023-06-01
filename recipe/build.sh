@@ -32,6 +32,7 @@ cmake_options=(
   "-DLIBS=${LIBS[*]// /;}"
   "-DLIB_PATHS=${LIB_PATHS[*]// /;}"
   "-DINC_PATHS=${INC_PATHS[*]// /;}"
+  "-DCMAKE_Fortran_FLAGS='-O3 -fallow-argument-mismatch'"
 )
 
 cmake "${cmake_options[@]}" -GNinja -B_build
