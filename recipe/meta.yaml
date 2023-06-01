@@ -41,10 +41,10 @@ requirements:
     - liblapack
   run:
     - {{ mpi }}
-    - libomm * {{ mpi_prefix }}_*
-    - matrixswitch * {{ mpi_prefix }}_*
-    - elpa * {{ mpi_prefix }}_*
-    - ntpoly * {{ mpi_prefix }}_*
+    - {{ pin_compatible('libomm', max_pin='x.x') }} {{ mpi_prefix }}_*
+    - {{ pin_compatible('matrixswitch', max_pin='x.x') }} {{ mpi_prefix }}_*
+    - {{ pin_compatible('elpa', max_pin='x.x') }} {{ mpi_prefix }}_*
+    - {{ pin_compatible('ntpoly', max_pin='x.x') }} {{ mpi_prefix }}_*
     - scalapack
 
 
